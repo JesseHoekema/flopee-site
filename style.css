@@ -1,0 +1,110 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.menu {
+    margin-top: 70px;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    padding-left: 15px;
+    width: 200px; /* Stel de breedte van de zijbalk in */
+    height: 100vh; /* Neem de volledige hoogte van het scherm in */
+    background-color: #f0f0f0; /* Achtergrondkleur van de zijbalk */
+    position: fixed; /* Blijft op zijn plaats zelfs als de pagina wordt gescrold */
+    top: 0; /* Plaats het bovenaan de pagina */
+    left: 0; /* Plaats het aan de linkerkant van de pagina */
+    border-right: 1px solid;
+}
+a {
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display: flex;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8;
+}
+a:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+.bar-top {
+    margin: 0;
+    background-color: #f0f0f0;
+    padding-top: 0px;
+    width: 100%;
+    height: 70px;
+    padding: 0px;
+    display: flex;
+    padding-left: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid;
+}
+.bar-top h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-top: 1px;
+}
+.bar-top input {
+    height: 40px;
+    margin-top: 25px;
+    width: 20%;
+    border-radius: 92px;
+    border: 0px solid;
+    background-color: rgba(22, 24, 35, 0.06);
+    margin: auto;
+    padding-left: 10px;
+}
+.bar-top input:active {
+    border: 1px solid;
+}
+#pfp {
+    border-radius: 99px;
+    width: 50px;
+    height: 50px;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+.video-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video {
+    overflow: hidden;
+    padding-top: 6%;
+    margin-bottom: 6px;
+}
+
+.video video {
+    margin-bottom: 15px;
+    margin-left: 40%;
+    width: 350px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px; /* Extra styling for the video */
+    outline: none; /* Remove the default focus border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect on hover */
+
+    /* Optional styling for controls */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.active {
+    color: red;
+}
