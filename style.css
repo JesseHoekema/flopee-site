@@ -107,11 +107,11 @@ ul {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.active {
-    color: red;
-}
 .mini-icon {
     display: none;
+}
+.active {
+    color: red;
 }
 }
 @media only screen and (max-width: 767px) {
