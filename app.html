@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flopee - App</title>
+    <link rel="shortcut icon" href="translogo.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .main-site-menu {
+            display: flex;
+            border: 0.1px solid;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 50px;
+            background-color: white;
+        }
+        .menu-ul {
+            display: flex;
+        }
+        .menu-li {
+            padding-right: 10px;
+            margin: 0;
+            list-style: none;
+        }
+        .logo-main {
+            width: 55px;
+            height: 55px;
+            margin: 0;
+            margin-left: 20px;
+        }
+        .main-app {
+            background-color: white;
+            width: 400px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+        button {
+            background-color: red;
+            border: 1px solid;
+            border-radius: 50px;
+            height: 45px;
+            width: 150px;
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .main-content-boxes {
+            display: flex;
+            margin-top: 20px;
+        }
+        #htdios {
+            display: none;
+        }
+        #htdandroid {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-site-menu">
+        <img class="logo-main" src="translogo.png"> 
+        <ul class="menu-ul">
+            <li class="menu-li" onclick="openMain()">Watch</li>
+            <li class="menu-li">App</li>
+            <li class="menu-li">                <a href="https://discord.gg/9SVPa38bb2" style="background-color: transparent; border: none; margin-top: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.05c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+              </svg></a></li>
+        </ul>
+    </div>
+    <div class="main-content-boxes">
+        <div class="main-app">
+            <p style="padding-left: 30px; padding-right: 30px; padding-top: 30px;">Download the iOS app now for completely free to get better experience</p>
+            <img src="iphonemockup-pro.png">
+            <div>
+                <button onclick="openIos()">How To Download?</button>
+                <button onclick="downloadIpa()">Download Ipa</button>
+            </div>
+            <div id="htdios">
+                <ul>
+                    <li>install scarlet using this video https://www.youtube.com/watch?v=MwewA-z7U_Q&t=165s and this link to open the site that you need to use https://usescarlet.com/</li>
+                    <li>download the ipa on our site or using this link:</li>
+                    <li>import the file in scarlet and install</li>
+                    <li>your done!</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main-app">
+            <p style="padding-left: 30px; padding-right: 30px; padding-top: 30px;">Download the Android app now for completely free to get better experience</p>
+            <img src="androidmockup.png" width="190px">
+            <div>
+                <button onclick="openAndroid()">How To Download?</button>
+                <button onclick="downloadApk()">Download Apk</button>
+            </div>
+            <div id="htdandroid">
+                <ul>
+                    <li>download the apk on our site or using this link:</li>
+                    <li>click on the apk and click install or something</li>
+                    <li>its now installing!</li>
+                    <li>your done!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var iosInfo = document.getElementById("htdios");
+        var androidInfo = document.getElementById("htdandroid");
+
+        function openIos() {
+            iosInfo.style.display = "block";
+        }
+        function openAndroid() {
+            androidInfo.style.display = "block";
+        }
+        function downloadIpa() {
+            window.location.href = "https://drive.google.com/uc?export=download&id=1LpmioeIyRjyUonePZ-tGunQqJCidT58M"
+        }
+        function downloadApk() {
+            window.location.href = "https://drive.google.com/uc?export=download&id=1wFWdn9o95klbddnsm2nfMhvfjSnvk9BI"
+        }
+        function openMain() {
+            window.location.href = "/index.html"
+        }
+        function openAbout() {
+            window.location.href = "/about.html"
+        }
+    </script>
+</body>
+</html>
